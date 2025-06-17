@@ -39,8 +39,8 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rpeditz:rpeditz@rpedit
 DATABASE_NAME = environ.get('DATABASE_NAME', "rpeditz")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jisshu')
+FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://rpeditz:rohit@rpeditz.gjubmos.mongodb.net/?retryWrites=true&w=majority&appName=rpeditz")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'rpeditz')
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002861423340'))
