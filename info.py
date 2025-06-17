@@ -25,14 +25,14 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Talk2Rpeditz_Bot') # without @ o
 USERNAME = environ.get('USERNAME', "yogesh2429") # ADMIN USERNAME
 
 # Database Channel 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002755150310').split()]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', ''))
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', ''))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002753874360'))
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002753874360'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002600490832'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002640747134')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002578600018'))
 
 # MongoDB 
 DATABASE_URI = environ.get('DATABASE_URI', "")
